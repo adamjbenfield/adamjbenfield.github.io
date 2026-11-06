@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <!--
     index.html
@@ -13,36 +13,128 @@
     - css/style.css  -> controls the visual appearance of the site
     - js/main.js     -> controls interactive behaviour/functionality
 -->
-    
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Adam Benfield | Electrical Engineering</title>
 
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
+  <body>
+    <!-- =========================
+         NAVIGATION
+         Main menu displayed at the top of the website.
+         ========================= -->
+    <header class="site-header">
+      <nav class="navbar">
+        <a class="logo" href="#home"> Adam Benfield </a>
 
-    <h1>Adam Benfield</h1>
+        <div class="nav-links">
+          <a href="#projects">Projects</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
 
-    <p>
-        Electrical Engineering student at James Cook University.
-    </p>
+    <!-- =========================
+         HERO / INTRODUCTION
+         First major section visitors see.
+         ========================= -->
+    <main>
+      <section class="hero" id="home">
+        <p class="hero-label">Electrical Engineering</p>
 
-    <p>
-        Interested in electronics, embedded systems, robotics and control systems.
-    </p>
+        <h1>Adam Benfield</h1>
 
-    <p>
-        Engineering portfolio currently under development.
-    </p>
+        <p class="hero-description">
+          Electrical Engineering student at James Cook University, interested in
+          electronics, embedded systems, robotics and control systems.
+        </p>
+
+        <div class="hero-buttons">
+          <a class="button primary-button" href="#projects"> View Projects </a>
+
+          <a class="button secondary-button" href="#about"> About Me </a>
+        </div>
+      </section>
+
+      <!-- =========================
+             FEATURED PROJECTS
+             Main engineering projects will be displayed here.
+             ========================= -->
+      <section class="projects-section" id="projects">
+        <p class="section-label">Portfolio</p>
+
+        <h2>Featured Projects</h2>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-image-placeholder">Project image</div>
+
+            <div class="project-content">
+              <p class="project-category">Robotics · Embedded Systems</p>
+
+              <h3>Desktop Robotic Arm</h3>
+
+              <p>
+                Development of a compact robotic arm focused on speed, accuracy,
+                payload capability and low-cost engineering.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image-placeholder">Future project</div>
+
+            <div class="project-content">
+              <p class="project-category">Electronics</p>
+
+              <h3>More Projects Coming Soon</h3>
+
+              <p>
+                Additional electronics, embedded systems and university
+                engineering projects will be added here.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- =========================
+             ABOUT
+             Short professional introduction.
+             ========================= -->
+      <section class="about-section" id="about">
+        <p class="section-label">About</p>
+
+        <h2>Engineering, electronics and making things work.</h2>
+
+        <p>
+          I'm an Electrical Engineering student at James Cook University with
+          interests in embedded systems, electronics, robotics and control. I
+          enjoy developing practical projects that combine hardware, software
+          and engineering analysis.
+        </p>
+      </section>
+
+      <!-- =========================
+             CONTACT
+             Links to professional profiles and contact methods.
+             ========================= -->
+      <section class="contact-section" id="contact">
+        <p class="section-label">Contact</p>
+
+        <h2>Get in touch</h2>
+
+        <a href="https://github.com/adamjbenfield"> GitHub </a>
+      </section>
+    </main>
 
     <script src="js/main.js"></script>
-
-</body>
-
+  </body>
 </html>
