@@ -1,0 +1,24 @@
+/*
+    style.css
+    =========
+    Main stylesheet for adambenfield.com.
+
+    CSS controls the VISUAL APPEARANCE of the website, including:
+    - colours
+    - fonts
+    - spacing
+    - sizing
+    - page layout
+    - responsive/mobile design
+    - animations and visual effects
+
+    The stylesheet is linked to index.html using:
+    <link rel="stylesheet" href="css/style.css">
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
+    padding: 40px;
+}
